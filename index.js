@@ -7,14 +7,12 @@ app.use(bodyParser.json())
 
 app.get('/api/showkey', async (req, res) => {
 
-
-
     const somekey = process.env.somekey
     
     res.send('somekey: '+somekey)
     
     })
-    
+
 app.get('/api/db', async (req, res) => {
 
     const str = JSON.stringify(process.env)
@@ -30,7 +28,7 @@ app.get('/api/hello', async (req, res) => {
 
 app.get('/api/merhaba', (req, res) => {
 
-    res.send('Merhaba Dünya')
+    res.send('Merhaba Dünyalı')
 })
 
 app.post('/api/name', (req, res) => {
